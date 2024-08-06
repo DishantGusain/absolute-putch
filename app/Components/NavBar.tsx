@@ -1,11 +1,10 @@
-import logo from "../Images/logo.png";
 import { IoArrowForward } from "react-icons/io5";
 import { IoMenuOutline } from "react-icons/io5";
 
 export default function NavBar() {
    return (
       <div className="top-0 z-40 fixed   backdrop-filter backdrop-blur-3xl shadow md:shadow-none bg-white/60 w-full transition duration-700">
-         <div className="flex justify-between items-center w-full  z-50  px-4 md:px-16 py-5">
+         <div className="flex justify-between items-center w-full  z-50  px-4 md:px-20 py-5">
             <div className="md:flex   cursor-pointer  items-center ">
                {/* <a href="/">
             <img src={logo} alt="Logo" className="md:w-72 w-32" />

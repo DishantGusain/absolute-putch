@@ -11,14 +11,14 @@ const VideoModal = ({ isOpen, onClose }: VideoModalProps) => {
          {/* Close button */}
          <div
             onClick={onClose}
-            className="absolute top-12 right-28 text-white text-6xl cursor-pointer"
+            className="absolute md:top-12 top-10 right-6 md:right-28 text-white text-4xl md:text-6xl cursor-pointer"
          >
             x
          </div>
          <video
             autoPlay
             controls
-            className="w-[80%] h-[80%] object-cover"
+            className="w-[100%] h-[100%] md:w-[80%] md:h-[80%]  md:object-cover"
          >
             <source
                src="/herovideo.mp4"
