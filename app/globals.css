@@ -2,3 +2,138 @@
 @tailwind components;
 @tailwind utilities;
 
+.muzieknootjes {
+   margin: auto;
+   width: 25%;
+   min-width: 300px;
+   height: 200px;
+   border: 0px solid #000;
+}
+
+.noot-1,
+.noot-2,
+.noot-3,
+.noot-4,
+.noot-5 {
+   position: absolute;
+   animation: notes 3s infinite linear;
+   font-size: 35px;
+   opacity: 0;
+}
+
+.noot-1 {
+   top: 60px;
+   left: 0;
+   animation-delay: 0.2s;
+}
+
+.noot-2 {
+   top: 30px;
+   left: 30%;
+   animation-delay: 1.2s;
+}
+
+.noot-3 {
+   top: 90px;
+   left: 40%;
+   animation-delay: 2s;
+}
+.noot-4 {
+   top: 30px;
+   left: 75%;
+   animation-delay: 0.7s;
+}
+
+.noot-5 {
+   top: 40px;
+   left: 65%;
+   animation-delay: 1.5s;
+}
+
+@keyframes notes {
+   0% {
+      transform: scale(1) translate(0, 0);
+      opacity: 0;
+   }
+   50% {
+      opacity: 1;
+      transform: scale(1.5) translate(50%, -50%);
+   }
+   80% {
+      opacity: 0.5;
+      transform: scale(1.5) translate(90%, -100%);
+   }
+   100% {
+      transform: scale(1.3) translate(100%, -90%);
+      opacity: 0;
+   }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+   
+
+   
+.muzieknootjes {
+   margin: auto;
+   width: 10%;
+   min-width: 170px;
+   height: 220px;
+   border: 0px solid #000;
+}
+
+
+.noot-1,
+.noot-2,
+.noot-3,
+.noot-4,
+.noot-5 {
+   position: absolute;
+   animation: notes 3s infinite linear;
+   font-size: 15px;
+   opacity: 0;
+}
+
+
+
+
+
+
+
+.noot-1 {
+   top: 60px;
+   left: 0;
+   animation-delay: 0.2s;
+}
+
+.noot-2 {
+   top: 30px;
+   left: 35%;
+   animation-delay: 2s;
+}
+
+.noot-3 {
+   top: 90px;
+   left: 40%;
+   animation-delay: 2s;
+}
+.noot-4 {
+   top: 30px;
+   left: 75%;
+   animation-delay: 0.7s;
+}
+
+.noot-5 {
+   top: 40px;
+   left: 65%;
+   animation-delay: 1.5s;
+}
+
+
+
+ }
